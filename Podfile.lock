@@ -1,0 +1,15 @@
+PODS:
+  - SnapKit (4.0.0)
+  - TZImagePickerController (1.7.9)
+
+DEPENDENCIES:
+  - SnapKit
+  - TZImagePickerController (~> 1.7.7)
+
+SPEC CHECKSUMS:
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  TZImagePickerController: 0a8ff228d287ebdd7d485e8c42a2a932894f1fba
+
+PODFILE CHECKSUM: 49ca37edd7760d449193ee4b3d63dfbd8942d650
+
+COCOAPODS: 1.2.1
