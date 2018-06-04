@@ -92,6 +92,7 @@ class DrawBoardImageView: UIImageView {
             self.realImage = currentImage
             if let newImage = currentImage{
                 self.scriptManager.addImage(newImage)
+                self.backgroundColor = UIColor.init(patternImage: UIImage.scaleImage(image: newImage))
             }
             let image = CTImageEditUtil.getScaleImage(with: currentImage)
             let realimage = CTImageEditUtil.getImageWithOldImage(image)

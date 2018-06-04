@@ -20,7 +20,6 @@ class TDSketchViewController : UIViewController {
                    eimge = UIImage.imageRotation(image: image, orientation: .right)
                 }
                 self.drawBoardImageView.currentImage = eimge
-                self.drawBoardImageView.backgroundColor = UIColor.init(patternImage: UIImage.scaleImage(image: eimge))
                 self.drawBoardImageView.masicImage = UIImage.trans(toMosaicImage: eimge, blockLevel: 20)
             }
         }

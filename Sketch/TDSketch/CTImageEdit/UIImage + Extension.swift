@@ -65,13 +65,11 @@ extension UIImage {
     }
     
     static func scaleImage(image: UIImage) -> UIImage {
-        let boardH = KScreenHeight-64-LSize.adapt(50)-LSize.adapt(55)
-        // 缩放比
-        let scaled : CGFloat = boardH/image.size.height
+        let boardH = KScreenHeight-LSize.adapt(105)-64
         // 图片大小
-        UIGraphicsBeginImageContext(CGSize(width:image.size.width*scaled,height:boardH))
+        UIGraphicsBeginImageContext(CGSize(width:boardH/KScreenHeight*KScreenWidth,height:boardH))
         
-        image.draw(in: CGRect(x: 0, y: 0, width:image.size.width*scaled, height: boardH))
+        image.draw(in: CGRect(x: 0, y: 0, width:boardH/KScreenHeight*KScreenWidth, height: boardH))
        
         let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
